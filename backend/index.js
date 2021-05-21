@@ -28,6 +28,8 @@ app.get("/", (request, respond) => {
   });
 });
 
+
+
 app.use('/api/products', PRODUCTS );
 
 
