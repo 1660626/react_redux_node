@@ -1,0 +1,25 @@
+{
+  "name": "react_redux_node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"cd backend && npm start\" \"cd frontend && yarn start\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/1660626/react_redux_node.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/1660626/react_redux_node/issues"
+  },
+  "homepage": "https://github.com/1660626/react_redux_node#readme",
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.5.1",
+    "concurrently": "^5.3.0",
+    "yarn-upgrade-all": "^0.5.4"
+  }
+}
