@@ -1,6 +1,5 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { useTranslation } from "react-i18next";
-import { Select } from "antd";
 import "./style.css";
 import languge from "./language";
 

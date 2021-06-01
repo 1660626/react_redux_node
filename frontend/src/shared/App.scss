@@ -1,0 +1,24 @@
+.App {
+  .App-header {
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    position: absolute;
+    height: 100%;
+    width: calc(100% - 78px);
+    left: 78px;
+    // background: #e4e9f7;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2px);
+    transition: all 0.5s ease;
+    
+  }
+  .sidebar.active ~ .App-header{
+    width: calc(100% - 240px);
+    left: 240px;
+  
+  }
+}

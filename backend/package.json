@@ -1,7 +1,6 @@
 {
   "name": "backend",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "mocha ./test/* --exit",
@@ -31,5 +30,6 @@
     "chai": "^4.3.4",
     "nodemon": "^2.0.7",
     "yarn-upgrade-all": "^0.5.4"
-  }
+  },
+  "description": ""
 }

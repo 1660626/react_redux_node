@@ -1,0 +1,56 @@
+.background {
+  width: 100%;
+  height: 100%;
+  background-image: url(./img/bg.png);
+  background-size: cover;
+  position: relative;
+  .container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url(./img/background.png);
+    background-size: cover;
+    height: 580px;
+    min-width: 1020px;
+    //    min-width: 510px;
+
+    box-shadow: 20px 20px 15px rgba(0, 0, 0, 0.4);
+
+    .leaf__left {
+      position: absolute;
+      width: 340px;
+      height: 100%;
+      top: -5px;
+      left: -2px;
+      background-image: url(./img/leaf1.png);
+      background-size: cover;
+    }
+    .leaf__right {
+      position: absolute;
+      width: 530px;
+      height: 100%;
+      top: 0px;
+      right: 0px;
+      background-image: url(./img/leaf2.png);
+      background-size: cover;
+    }
+    .contnet {
+        padding:100px 300px;
+
+      h1 {
+        font-family: ExampleFont !important;
+        font-weight: bold !important;
+        color: #17350f;
+        letter-spacing: 18px;
+
+      }
+      span {
+        font-family: ExampleFont !important;
+        font-weight: 600 !important;
+        color: #354f2c;
+        letter-spacing: 18px;
+      }
+    }
+  }
+}

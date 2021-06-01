@@ -1,9 +1,10 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { addNumber } from "../store/slice/numberadd";
+import { addNumber } from "../../shared/store/slice/numberadd";
+import { Link } from "react-router-dom";
 
 
-function Children() {
+function Contact() {
   const dispatch = useDispatch();
 
   const formDatanumber = useSelector((state) => state.numberSlice);
@@ -20,8 +21,9 @@ function Children() {
             type="text"
             placeholder="First Name"
           />
+            <div> <Link to="/">Home</Link></div>
     </div>
   );
 }
 
-export default Children;
+export default Contact;

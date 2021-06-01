@@ -1,13 +1,26 @@
-body {
+
+@font-face {
+  font-family: ExampleFont;
+  src: url(assets/font/Walkway.ttf) format('truetype');
+}
+@font-face {
+  font-family: ExampleFont;
+  src: url(assets/font/Walkway-Bold.ttf) format('truetype');
+  font-weight: bold;
+}
+@font-face {
+  font-family: ExampleFont;
+  src: url(assets/font/Walkway-Bold.ttf) format('truetype');
+  font-weight: 600;
+}
+*{
   margin: 0;
+  padding: 0;
+}
+body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
 }
