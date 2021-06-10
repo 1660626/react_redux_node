@@ -7,13 +7,13 @@ function Translate() {
   const { t } = useTranslation();
 
   return (
-    <>
+    <div className="translate">
       <h1 className="text_trans">{t("hello")}</h1>
       <h1 className="text_trans">{t("thankyou")}</h1>
       <div>
         <Link to="/contact">Terms and Conditions</Link>
       </div>
-    </>
+    </div>
   );
 }
 

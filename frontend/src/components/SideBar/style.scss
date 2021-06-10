@@ -1,7 +1,7 @@
 .sidebar {
   position: fixed;
   top: 0;
-  left: 0;
+  left: -78px;
   height: 100%;
   width: 78px;
   background: #11101d;
@@ -33,13 +33,13 @@
       cursor: pointer;
       text-align: -webkit-center;
       position: absolute;
-      top: 15px;
-      left: 50%;
-      font-size: 22px;
-      height: 50px;
+      top: 0px;
+      left: 100%;
       width: 50px;
-      line-height: 50px;
-      transform: translateX(-50%);
+      // transform: translateX(-50%);
+      background: #11101d;
+      transition: all 0.4s ease;
+
       .bar1,
       .bar2,
       .bar3 {
@@ -156,16 +156,31 @@
   }
 }
 
+
+
+
+.active2{
+  left: 0px;
+  .logo_content {
+  
+    .hamberger {
+      left: 20%;
+      top: 15px;
+    }
+  }
+}
+
 .active {
   width: 240px;
-
+  left: 0;
   .logo_content {
     .logo {
       opacity: 1;
       pointer-events: none;
     }
     .hamberger {
-      left: 90%;
+      left: 75%;
+      top: 15px;
     }
   }
   .nav_list {

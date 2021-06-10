@@ -7,12 +7,29 @@ import Logout from "../../assets/img/icon/svg/logout.svg";
 import { SidebarData } from "./SidebarData";
 
 function SideBar() {
-  const [toggle, settoggle] = useState(false);
+  const [toggle, settoggle] = useState(0);
   const handleToggle = () => {
-    settoggle(!toggle);
+    if (toggle === 0) {
+      settoggle(1);
+    }
+    if (toggle === 1) {
+      settoggle(2);
+    }
+    if (toggle === 2) {
+      settoggle(0);
+    }
   };
+
   return (
-    <div className={toggle ? "sidebar active" : "sidebar"}>
+    <div
+      className={
+        toggle === 0
+          ? "sidebar"
+          : toggle === 1
+          ? "sidebar active2"
+          : "sidebar active"
+      }
+    >
       <div className="logo_content">
         <div className="logo">
           <div className="img_logo">
@@ -21,7 +38,13 @@ function SideBar() {
           <div className="logo_name">CodingLab</div>
         </div>
         <div
-          className={toggle ? "hamberger change" : "hamberger"}
+          className={
+            toggle === 0
+              ? "hamberger"
+              : toggle === 1
+              ? "hamberger active2"
+              : "hamberger change"
+          }
           onClick={() => handleToggle()}
         >
           <div className="bar1"></div>
