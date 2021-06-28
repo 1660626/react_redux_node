@@ -1,19 +1,32 @@
+@import "media";
+.section__HEAD,
+.section__BANNER,
+.section__PRODUCTS {
+  display: flex;
+}
 .container {
-  transition: all 0.8s ease;
   padding-left: 1.25rem;
   padding-right: 1.25rem;
-  position: relative;
   z-index: 1;
-  width: 100%;
   margin-right: auto;
   margin-left: auto;
+  width: 100%;
+  max-width: 1440px;
+
+  @media (max-width: 768px) {
+    height: 0% !important;
+  }
 }
 
 .text__title {
   font-weight: 600;
 }
+
 .text__content {
   font-size: 16px;
+  @media (max-width: 768px) {
+    font-size: 14px !important;
+  }
 }
 
 .shop__now {
@@ -27,171 +40,13 @@
   }
 }
 
-@media (min-width: 1400px) {
-  .container {
-    max-width: 1440px;
-    .sold__immage {
-      left: 53%;
-      width: 60%;
-    }
-  }
-}
-
-@media (max-width: 1400px) {
-  .section__HEAD {
-    .container {
-      max-width: 1120px;
-      .sold__immage {
-        left: 53%;
-        width: 70%;
-        top: 55.5% !important;
-        height: 89% !important;
-      }
-      .text {
-        transition: all 0.1s ease;
-        .left_banner_text {
-          .text__content {
-            padding-right: 50px !important;
-          }
-        }
-        .right_banner_text {
-          .shop__now {
-            margin-top: 35px !important;
-          }
-        }
-      }
-    }
-  }
-}
-
-@media (max-width: 1200px) {
-  .section__HEAD {
-    .container {
-      max-width: 960px;
-      .sold__immage {
-        left: 52%;
-        width: 65%;
-        top: 62.5% !important;
-        height: 75% !important;
-      }
-      .text {
-        .left_banner_text {
-          margin-top: 15px;
-          .text__title {
-            font-size: 57px !important;
-            line-height: 60px !important;
-          }
-        }
-      }
-    }
-  }
-}
-@media (max-width: 1024px) {
-  .section__HEAD {
-    .container {
-      @media (max-height: 1366px) {
-        .sold__immage {
-          left: 55% !important;
-          width: 93% !important;
-          top: 62.5% !important;
-          height: 75% !important;
-        }
-      }
-      @media (max-height: 768px) {
-        .sold__immage {
-          width: 65% !important;
-          top: 53.5% !important;
-          height: 93% !important;
-        }
-      }
-      .banner {
-        .text {
-          .left_banner_text {
-            margin-top: 90px !important;
-          }
-        }
-      }
-    }
-  }
-}
-@media (max-width: 768px) {
-  .section__HEAD {
-    .container {
-      height: auto !important;
-      .banner {
-        .text {
-          .left_banner_text {
-            position: relative !important;
-            top: 0 !important;
-            .text__content {
-              position: relative !important;
-              margin-top: 10px !important;
-            }
-          }
-          .right_banner_text {
-            position: relative !important;
-            bottom: 0 !important;
-            width: 100% !important;
-            margin-top: 20px;
-            .text__content {
-              margin-top: 10px !important;
-            }
-            .shop__now {
-              margin-top: 15px !important;
-            }
-          }
-        }
-        .img__sold {
-          margin-top: 20px;
-          width: 100%;
-          height: 300px;
-          background: #f3f3f3;
-          .sold {
-            display: none;
-          }
-          .sold__immage {
-            position: relative !important;
-            left: 50% !important;
-            width: 93% !important;
-            top: 43.5% !important;
-            height: 112% !important;
-          }
-        }
-      }
-    }
-  }
-}
-
-@media (max-width: 576px) {
-  .section__HEAD {
-    .container {
-      .banner {
-        .text {
-          .left_banner_text {
-            margin-top: 70px !important;
-            .text__title {
-              font-size: 40px !important;
-              line-height: 40px !important;
-            }
-          }
-        }
-      }
-    }
-  }
-}
-
 .root__plant {
   // font-family: -apple-system,'Roboto', sans-serif;
   font-family: -apple-system, "Segoe UI", Roboto, sans-serif;
   .section__HEAD {
-    background: #fff;
-
     .container {
       height: 100vh;
-      // background: rgb(0, 0, 0);
-
       .banner {
-        // background: #cff;
         min-height: 100%;
         position: relative;
         .sold {
@@ -207,13 +62,15 @@
         .sold__immage {
           position: absolute;
           transition: all 0.8s ease;
-          top: 54.5%;
-          height: 91%;
+          top: 53.5%;
+          height: 93%;
+          left: 52%;
+          width: 50%;
           transform: translate(-50%, -50%);
           -ms-transform: translate(-50%, -50%);
           background-size: cover;
           background-repeat: no-repeat;
-          background-image: url(plant/plant1.png);
+          background-image: url(img/plant1.png);
           img {
             display: none;
           }
@@ -258,6 +115,72 @@
             .text__content {
               margin-top: 20px;
             }
+          }
+        }
+      }
+    }
+  }
+
+  .section__BANNER {
+    .block {
+      margin: 150px 0;
+      display: flex;
+      height: 500px;
+      .spesies_plants {
+        background-color: #f3f3f3;
+        width: 60%;
+      }
+      .plants {
+        width: 40%;
+        margin-left: 20px;
+        display: grid;
+        .plants_wide {
+          background-color: #f2f2ea;
+          margin-bottom: 20px;
+        }
+        .plants_natural {
+          background-color: #f3f6ef;
+        }
+      }
+      .spesies_plants,
+      .plants_wide,
+      .plants_natural {
+        display: flex;
+        align-items: center;
+      }
+      .plants_text_banner {
+        margin: 0 10px 0 40px;
+        .plants_text_banner_discount {
+          font-weight: 600;
+          text-transform: uppercase;
+        }
+        .plants_text_banner_title {
+          font-weight: bold;
+          text-transform: uppercase;
+          font-size: 24px;
+        }
+        .plants_text_banner_content {
+        }
+      }
+      .spesies_plants {
+        .plants_img_banner {
+          img {
+            max-width: 95%;
+          }
+        }
+      }
+      .plants_natural {
+        flex-direction: row-reverse;
+      }
+      .plants_wide,
+      .plants_natural {
+        .plants_text_banner {
+          width: 200%;
+        }
+        .plants_img_banner {
+          img {
+            float: right;
+            max-width: 85%;
           }
         }
       }

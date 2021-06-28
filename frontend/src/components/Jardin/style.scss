@@ -1,4 +1,14 @@
 
+.body_jar{
+  
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  // left: 78px;
+  // background: #e4e9f7;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2px);
+  transition: all 0.5s ease;
+}
 .background {
   font-size: calc(10px + 2vmin);
   text-align: center;
